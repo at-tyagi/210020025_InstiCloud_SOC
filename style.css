@@ -1,0 +1,10 @@
+table,th,td
+{
+  border:1px solid white;
+}
+body{
+  text-align:center;
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
