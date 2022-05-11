@@ -31,14 +31,13 @@ const question = [{
   
 ]
 
-id=-1;
-
+var id=-1;
 function next()
 {
   
   if(id<2)
   id=id+1;
-  if(id<3&&id>=0)
+  if(id<3&&id>-2)
   {fun();
   var ele = document.getElementsByName("opt");
   for(var i=0;i<ele.length;i++)
@@ -52,7 +51,10 @@ function next()
 
 }
 function prev()
-{  if(id>0)
+{  
+  if(id<0)
+  { document.getElementById("a").href="start.html";}
+    if(id>0)
   {id=id-1;
   fun();}
 }
@@ -62,12 +64,12 @@ function fun()
 { 
       if(id>=0&&id<2)
     {
-      document.getElementById("start").innerHTML="next";
-      document.getElementById("prev").innerHTML="prev";
+      document.getElementById("start").value="next";
+      document.getElementById("prev").value="prev";
     }
     if(id==2){
-      document.getElementById("start").innerHTML="save and submit";
-      document.getElementById("prev").innerHTML="prev";
+      document.getElementById("start").value="save and submit";
+      document.getElementById("prev").value="prev";
     }
 
   const ques=document.getElementById("ques");
@@ -75,11 +77,13 @@ function fun()
   const opt2=document.getElementById("opt2");
   const opt3=document.getElementById("opt3");
   const opt4=document.getElementById("opt4");
-  ques.innerHTML=question[id].q;
+  ques.innerHTML=question[id].q+" "+id;
   opt1.innerHTML=question[id].a[0].text
   opt2.innerHTML=question[id].a[1].text
   opt3.innerHTML=question[id].a[2].text
   opt4.innerHTML=question[id].a[3].text
+
+
   
 
 }

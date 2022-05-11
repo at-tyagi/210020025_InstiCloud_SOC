@@ -9,11 +9,11 @@
   <title>Quiz</title>
 </head>
 <body>
-  <table style="width:80%">
+  <table class="table" style="width:80%">
  <tr><th><h1 id="ques"  style="font-family: cursive"></h1></th></tr>
   </table>
 <br><br>
-<table style="width:80%">
+<table class="table" style="width:80%">
   <tr>
     <td><input type="radio"  name="opt"value="0"><h2 id="opt1"></h2></h2></td>
     <td><input type="radio"  name="opt"value="0"><h2 id="opt2"></h2></h2></td>
@@ -23,10 +23,12 @@
 </table>
 <br>
 <br>
-<table style="width:80%">
+<table class="table" style="width:80%">
 <tr>
-<td><button onclick="next()" id="start">start</button></td>
-  <td><button onclick="prev()" id="prev"></button></td></tr>
+<td>
+  <input type="button" id="start" onclick="next()" value="start">
+
+  <td><a id="a" ><input type="button" onclick="prev()" id="prev" value="Quit"></a></td></tr>
    </table>
 </body>
 </html>
