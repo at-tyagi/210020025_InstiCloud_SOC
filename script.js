@@ -77,7 +77,7 @@ function fun()
   const opt2=document.getElementById("opt2");
   const opt3=document.getElementById("opt3");
   const opt4=document.getElementById("opt4");
-  ques.innerHTML=question[id].q+" "+id;
+  ques.innerHTML=question[id].q;
   opt1.innerHTML=question[id].a[0].text
   opt2.innerHTML=question[id].a[1].text
   opt3.innerHTML=question[id].a[2].text
