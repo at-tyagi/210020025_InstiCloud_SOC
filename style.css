@@ -4,7 +4,10 @@ table,th,td
   opacity: 100%;
   text-align: center;
   padding: 0.5%;
+  font-family: cursive;
+
 }
+td:hover {background-color: darkslategrey;}
 body{
   text-align:center;
   background-color: black;
@@ -13,4 +16,15 @@ body{
   text-align: center;
   padding-left: 18%;
   padding-top: 10%;
+}
+#prev,#start,button
+{
+  background-color: rgb(40, 13, 13);
+  border: none;
+  color: white;
+  padding: 2px 2px
+  text-align: center;
+  font-family:cursive;
+  display: inline-block;
+  font-size: 30px;
 }

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <script src="script.js"></script>
@@ -9,16 +8,17 @@
   <title>Quiz</title>
 </head>
 <body class="table">
+   <h2 id="trial"></h2>
   <table class="table" style="width:80%">
- <tr><th><h1 id="ques"  style="font-family: cursive"></h1></th></tr>
+ <tr><th><h1 id="ques"  style="font-family: cursive">Java Script Based QUIZ</h1></th></tr>
   </table>
 <br><br>
 <table class="table" style="width:80%">
   <tr>
-    <td><input type="radio"  name="opt"value="0"><h2 id="opt1"></h2></h2></td>
-    <td><input type="radio"  name="opt"value="0"><h2 id="opt2"></h2></h2></td>
-    <td><input type="radio"  name="opt"value="0"><h2 id="opt3"></h2></h2></td>
-    <td><input type="radio"  name="opt"value="0"><h2 id="opt4"></h2></h2></td>
+    <td><button id="opt1" value="1" onclick="next()"><h2>click on quit to exit quiz</h2></td>
+    <td><button id="opt2" value="2" onclick="next()"><h2></h2></td>
+    <td><button id="opt3" value="3" onclick="next()"><h2></h2></td>
+    <td><button id="opt4" value="4" onclick="next()"><h2>click on start to start quiz</h2></td>
   </tr>
 </table>
 <br>
@@ -28,7 +28,7 @@
 <td>
   
  <a id="a" ><input type="button" onclick="prev()" id="prev" value="Quit"></a></td>
- <td> <input type="button" id="start" onclick="next()" value="start"></td></tr>
+ <td> <input type="button" id="start" onclick="scores()" value="score"></td></tr>
 
    </table>
 </body>
