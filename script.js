@@ -1,41 +1,6 @@
-const question = [{
-        id: 0,
-        q: "What is capital of India?",
-        a: [{ text: "Gandhinagar", isCorrect: false },
-            { text: "Surat", isCorrect: false },
-            { text: "Mumbai", isCorrect: true },
-            { text: "Delhi", isCorrect: false }
-        ],
-        af: 3
-
-    },
-    {
-        id: 1,
-        q: "Which of the following is a leap year?",
-        a: [{ text: "2002", isCorrect: false, isSelected: false },
-            { text: "2003", isCorrect: false },
-            { text: "2004", isCorrect: false },
-            { text: "2001", isCorrect: true }
-        ],
-        af: 4
-
-    },
-    {
-        id: 2,
-        q: "How many days a week have?",
-        a: [{ text: "6", isCorrect: false },
-            { text: "5", isCorrect: false },
-            { text: "7", isCorrect: true },
-            { text: "8", isCorrect: false }
-        ],
-        af: 3
-
-    }
-
-]
+var score = 0;
 
 var id = -1;
-var score = 0;
 if (id >= 0) {
 
 }
@@ -83,9 +48,9 @@ function val4() {
 
 function next() {
 
-    if (id < 2)
+    if (id <= 2)
         id = id + 1;
-    if (id < 3 && id > -2)
+    if (id <= 3 && id > -2)
         fun();
 
 
@@ -95,7 +60,7 @@ function prev() {
     if (id < 0) { document.getElementById("a").href = "start.html"; }
     if (id > 0) {
         id = id - 1;
-        fun();
+        fun();;
     }
 }
 
@@ -131,5 +96,53 @@ function fun() {
 }
 
 function scores() {
-    alert("score is : " + score + " ques ID: " + id);
+    alert("score is : " + score);
 }
+
+
+const question = [{
+        id: 0,
+        q: "What is capital of India?",
+        a: [{ text: "Gandhinagar", isCorrect: false },
+            { text: "Surat", isCorrect: false },
+            { text: "Mumbai", isCorrect: true },
+            { text: "Delhi", isCorrect: false }
+        ],
+        af: 3
+
+    },
+    {
+        id: 1,
+        q: "Which of the following is a leap year?",
+        a: [{ text: "2002", isCorrect: false, isSelected: false },
+            { text: "2003", isCorrect: false },
+            { text: "2004", isCorrect: false },
+            { text: "2001", isCorrect: true }
+        ],
+        af: 4
+
+    },
+    {
+        id: 2,
+        q: "How many days a week have?",
+        a: [{ text: "6", isCorrect: false },
+            { text: "5", isCorrect: false },
+            { text: "7", isCorrect: true },
+            { text: "8", isCorrect: false }
+        ],
+        af: 3
+
+    },
+    {
+        id: 3,
+        q: "Quiz sumbitted!",
+        a: [{ text: "*", },
+            { text: "score ->" },
+            { text: " click on score" },
+            { text: "*" }
+        ],
+        af: 3
+
+    }
+
+]
